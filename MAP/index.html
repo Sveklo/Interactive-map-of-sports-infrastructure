@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="stylesheet" href="css/nullstyle.css">
+		<link rel="stylesheet" href="css/style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=b9b92112-eb31-4a2d-83d1-512d9953ad28&lang=ru_RU" type="text/javascript"></script>
+		<script type="text/javascript">
+		ymaps.ready(init);
+		function init(){
+			var myMap = new ymaps.Map("map", {
+				center: [55.76, 37.64],
+				zoom: 12
+				});
+			}
+		</script>
+		<title>Карта</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="all">
+			<div class="header">
+				<div class="red"><!-- красная строчка -->
+					<div>
+						<a href="https://www.mos.ru/">
+							<span class=logo_txt>
+							<img src="https://www.mos.ru/front/markup/header-footer/media/small-logo.7260e7ff.svg" class="logo">
+							mos.ru</span>
+							<span class=logo2>Официальный сайт Мэра Москвы</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="white"><!-- белая строчка -->
+				<ul class="white_head">
+					<li>Новости</li>
+					<li>Афиша</li>
+					<li>Услуги</li>
+					<li>Мэр</li>
+					<li>Власть</li>
+					<li>Карта</li>
+					<li>Мой район</li>
+					<li>Инструкции</li>
+					<li>Обратная связь</li>
+				</ul>
+			</div>
+			<div id="map" class="map"></div>
+		</div>
+	</body>
+</html>
